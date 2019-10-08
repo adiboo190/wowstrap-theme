@@ -4,10 +4,13 @@
 		<title>WowStrap &mdash; Temanya Orang Indonesia!</title>
 		<link rel="shortcut icon" type="text/css" href="./assets/images/wordpress.png" />
 		<link rel="stylesheet" type="text/css" href="./assets/vendor/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/vendor/fontawesome-free/css/all.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/vendor/swal.js/sweetalert2.min.css" />
+		<link rel="stylesheet" type="text/css" href="./assets/vendor/fancybox/dist/jquery.fancybox.min.css" />
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white">
 				<div class="container">
 					<a class="navbar-brand" href="./">
 						<img src="./assets/images/logo-main-dark.png" height="30px" />
@@ -17,11 +20,8 @@
 					</button>
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav ml-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Link</a>
+								<a class="nav-link" href="./docs"><i class="fas fa-book mr-2"></i>Dokumentasi</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,18 +31,100 @@
 									<a class="dropdown-item" href="#">1.0.0-Beta-Mabar.2019</a>
 									<a class="dropdown-item" href="#">1.0.0-Beta-GESTAPU.2019</a>
 									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="#">Unduh Versi Stabil</a>
+									<a class="dropdown-item disabled" href="#">Versi Terbaru <span class="badge-danger badge">Non-Stable</span></a>
 								</div>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Demo</a>
+							<li class="nav-item text-center">
+								<span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Pratinjau masih belum tersedia.">
+									<button class="btn btn-primary" style="pointer-events: none;" type="button" disabled><i class="fas fa-eye mr-2"></i>Demo</button>
+								</span>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
+			<div class="container my-5 py-5">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-md-6">
+						<img src="./assets/images/bg-logo.png" class="img-fluid" />
+					</div>
+					<div class="col-md-6">
+						<h2>WowStrap Theme</h2>
+						<p>Tema Wordpress yang didesain untuk blog personal dan juga situs berita dengan Bootstrap 4 yang responsif dan elegan.</p>
+						<p><span class="badge-primary badge">1.0.0-Beta.Mabar-2019</span>&nbsp;<span class="badge badge-warning"><i class="fas fa-exclamation-triangle mr-1"></i>Tidak Stabil</span></p>
+						<button id="download-nstbl" class="btn btn-danger"><i class="fas fa-download mr-1"></i>Tetap Unduh<i class="fas fa-exclamation-triangle ml-1"></i></button>
+					</div>
+				</div>
+			</div>
 		</header>
+		<section class="bg-light">
+			<div class="container py-5">
+				<div class="row py-5">
+					<div class="col-md-6 mb-3">
+						<h3>Dibuat Dengan Sepenuh Hati</h3>
+						<p>Kami membuat tema ini dengan sepenuh hati. Mulai dari awal pengerjaan sampai dengan proses debugging yang akan menghasilkan produk tema yang sangat berkualitas dan dapat digunakan oleh kalangan luas.</p>
+						<div class="row">
+							<div class="col-6 d-flex flex-row">
+								<h1 class="text-center fab fa-5x fa-wordpress"></h1>
+								<div class="ml-3">
+									<b>WordPress 5.0</b>
+									<p>Cocok Di Versi WordPress 5.0 keatas.</p>
+								</div>
+							</div>
+							<div class="col-6 d-flex flex-row">
+								<h1 class="text-center fas fa-5x fa-mobile"></h1>
+								<div class="ml-3">
+									<b>Responsif</b>
+									<p>Cocok Di Segala Perangkat dan Desktop PC.</p>
+								</div>
+							</div>
+							<div class="col-6 d-flex flex-row">
+								<h1 class="text-center fas fa-5x fa-newspaper"></h1>
+								<div class="ml-3">
+									<b>Web Berita</b>
+									<p>Cocok Untuk Web Berita dan Blog Biasa.</p>
+								</div>
+							</div>
+							<div class="col-6 d-flex flex-row">
+								<h1 class="text-center fas fa-5x fa-archive"></h1>
+								<div class="ml-3">
+									<b>Bootstrap 4</b>
+									<p>Dibangun dengan bootstrap 4.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 row">
+						<div class="col-md-6">
+							<div class="card shadow">
+								<a href="./assets/images/screenshot-theme/1200x900-theme-default.png" data-fancybox="gallery" data-caption="Halaman Depan"><img src="./assets/images/screenshot-theme/1200x900-theme-default.png" class="img-fluid" /></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card shadow">
+								<a href="./assets/images/screenshot-theme/1200x900-post-page.png" data-fancybox="gallery" data-caption="Halaman Posting"><img src="./assets/images/screenshot-theme/1200x900-post-page.png" class="img-fluid" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container py-5">
+			<div class="my-5">
+				<h1 class="text-center">Tangkapan Layar</h1>
+			</div>
+		</section>
+		<footer class="bg-dark text-white py-3">
+			<div class="container">
+				<span class="text-center">Hak Cipta 2019, <a href="./">WowStrap Theme</a>.</span>
+			</div>
+		</footer>
 		<script src="./assets/vendor/jquery/jquery.min.js"></script>
-		<script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/vendor/fontawesome-free/js/all.min.js"></script>
+		<script src="./style.js"></script>
+		<script src="./assets/vendor/swal.js/sweetalert2.min.js"></script>
+		<script src="./assets/vendor/swal.js/sweetalert2.all.min.js"></script>
+		<script src="./assets/vendor/fancybox/dist/jquery.fancybox.min.js"></script>
 	</body>
 </html>
